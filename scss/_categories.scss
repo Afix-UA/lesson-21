@@ -1,0 +1,89 @@
+.categories {
+
+    &__container {}
+
+    &__title {}
+
+    &__items {
+        @include gridCards($type: fill, $min: rem(280), $max: 1fr, $gap: rem(30));
+    }
+
+    &__item {}
+
+    &__link-card {
+        width: 100%;
+
+        @media (any-hover: hover) {
+            &:hover {
+                .categories__images {
+                    transform: scale(1.02);
+                }
+
+                .categories__card-arrow {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+    &__images {
+        width: 100%;
+        height: 100%;
+        border-radius: rem(10);
+        overflow: hidden;
+        transition: transform 0.3s ease 0s;
+
+        img {
+            aspect-ratio: 270 / 393;
+            height: 100%;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-areas: "title arows"
+            "text arows";
+        font-family: "Causten";
+
+    }
+
+    &__card-title {
+        min-width: 100%;
+        grid-area: title;
+        color: #2A2F2F;
+        font-size: rem(18);
+        font-weight: 700;
+        line-height: 156.25%;
+        letter-spacing: rem(-0.715);
+
+        &:not(:last-child) {
+            margin-bottom: rem(3);
+        }
+    }
+
+    &__card-text {
+        grid-area: text;
+        color: #7F7F7F;
+        font-size: rem(13.407);
+        font-weight: 500;
+        line-height: 208.333%;
+        letter-spacing: rem(-0.536);
+
+
+    }
+
+    &__card-arrow {
+
+        justify-self: end;
+        align-self: center;
+        grid-area: arows;
+        transition: transform 0.3s ease 0s;
+
+    }
+}
+
+.title {}

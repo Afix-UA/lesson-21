@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson-21</title>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo"><img src="./img/header/logo.svg" alt="Logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Shop</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Men</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Women</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Combos</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Joggers</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__search">
+					<input type="search" name="Search" id="search" placeholder="Search">
+					<label for="search"></label>
+
+				</div>
+				<div class="header__actions actions-header">
+					<a href="" class="actions-header__item">
+						<img src="./img/header/heart.svg" alt="Heart">
+
+					</a>
+					<a href="" class="actions-header__item">
+						<img src="./img/header/user.svg" alt="User">
+
+					</a>
+					<a href="" class="actions-header__item">
+						<img src="./img/header/shopping-cart.svg" alt="User">
+
+					</a>
+					<button type="button" class="icon-menu"><span></span></button>
+				</div>
+			</div>
+
+		</header>
+		<main class="page">
+			<section class="page__hero hero">
+				<!-- Оболочка слайдера -->
+				<div class="hero__slider swiper">
+					<!-- Двигающееся часть слайдера -->
+					<div class="hero__wrapper wrapper-hero">
+
+						<!-- Слайд -->
+						<div class="hero__slide slide-hero">
+							<img class="hero__images" src="./img/hero/shop-hero-1-product-slide-1.jpg" alt="Shop-hero">
+							<div class="hero__container">
+								<button type="button" class="swiper-button-hero swiper-button-hero--prev"></button>
+								<div class="hero__content">
+									<span class="hero__label">T-shirt / Tops</span>
+									<h1 class="hero__title">Summer
+										Value Pack</h1>
+									<p class="hero__text">cool / colorful / comfy</p>
+									<button class="hero__button">Shop Now</button>
+								</div>
+								<button type="button" class="swiper-button-hero swiper-button-hero--next"></button>
+							</div>
+						</div>
+
+
+						<!-- Если нужен скролбар -->
+						<div class="swiper-scrollbar">
+							<span class="active"></span>
+							<span></span>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section class="page__block block">
+				<div class="block__container">
+					<h2 class="block__title">Grid не використав, З Grid цей блок адаптується погано! </h2>
+					<div class="block__items">
+						<div class="block__item item">
+							<div class="item__body">
+								<div class="item__content">
+									<p class="item__label">Low Price</p>
+									<h3 class="item__title">High Coziness</h3>
+									<p class="item__discount discount">UPTO 50% OFF.</p>
+									<a href="#" class="item__link">Explore Items</a>
+								</div>
+								<div class="item__image">
+									<img src="./img/top-block/01.jpg" alt="Image">
+								</div>
+							</div>
+						</div>
+						<div class="block__item item">
+							<div class="item__body">
+								<div class="item__content">
+									<p class="item__label">Beyoung Presents</p>
+									<h3 class="item__title">Breezy Summer Style</h3>
+									<p class="item__discount">UPTO 50% OFF.</p>
+									<a href="#" class="item__link">Explore Items</a>
+								</div>
+								<div class="item__image">
+									<img src="./img/top-block/02.jpg" alt="Image">
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<section class="page__arrival arrival">
+
+				<div class="arrival__container">
+					<h2 class="arrival__title title">New Arrival</h2>
+
+					<div class="arrival__slider swiper">
+
+						<div class="arrival__wrapper swiper-wrapper">
+
+							<div class="arrival__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<a href="#"><img class="swiper-slide__image" src="./img/arrival/01.jpg"
+											alt="Arrival"></a>
+									<a href="#">
+										<h2 class="swiper-slide__name"> Knitted Joggers</h2>
+									</a>
+								</div>
+
+							</div>
+							<div class="arrival__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<a href="#"><img class="swiper-slide__image" src="./img/arrival/02.jpg"
+											alt="Arrival"></a>
+									<a href="#">
+										<h2 class="swiper-slide__name"> Knitted Joggers</h2>
+									</a>
+								</div>
+
+							</div>
+							<div class="arrival__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<a href="#"><img class="swiper-slide__image" src="./img/arrival/03.jpg"
+											alt="Arrival"></a>
+									<a href="#">
+										<h2 class="swiper-slide__name"> Knitted Joggers</h2>
+									</a>
+								</div>
+
+							</div>
+							<div class="arrival__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<a href="#"><img class="swiper-slide__image" src="./img/arrival/04.jpg"
+											alt="Arrival"></a>
+									<a href="#">
+										<h2 class="swiper-slide__name"> Knitted Joggers</h2>
+									</a>
+								</div>
+
+							</div>
+						</div>
+
+						<button type="button" class="swiper-button-prev"><svg xmlns="http://www.w3.org/2000/svg"
+								width="16" height="14" viewBox="0 0 16 14" fill="none">
+								<path
+									d="M14.5857 7L1.58569 7M6.58569 13L1.2928 7.70711C0.902277 7.31658 0.902277 6.68342 1.2928 6.29289L6.58569 0.999999"
+									stroke="#3C4242" stroke-width="1.6" stroke-linecap="round" />
+							</svg>
+						</button>
+						<button type="button" class="swiper-button-next"><svg xmlns="http://www.w3.org/2000/svg"
+								width="16" height="14" viewBox="0 0 16 14" fill="none">
+								<path
+									d="M1 7H14M9 1L14.2929 6.29289C14.6834 6.68342 14.6834 7.31658 14.2929 7.70711L9 13"
+									stroke="#3C4242" stroke-width="1.6" />
+							</svg>
+						</button>
+
+					</div>
+
+				</div>
+			</section>
+			<section class="page__saving-zone saving-zone">
+				<div class="saving-zone__container">
+					<h2 class="saving-zone__title title">Big Saving Zone</h2>
+					<div class="saving-zone__items">
+						<div class="saving-zone__item item-saving-zone item-saving-zone--left ">
+							<div class="item-saving-zone__content">
+								<h3 class="item-saving-zone__name">Hawaiian Shirts</h3>
+								<div class="item-saving-zone__text">Dress up in summer vibe</div>
+								<p class="item-saving-zone__discount discount">UPTO 50% OFF</p>
+								<p class="item-saving-zone__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="23"
+										height="27" viewBox="0 0 23 27" fill="none">
+										<path
+											d="M11.5678 1.54871L11.5678 24.1518M22 15.4583L12.7972 24.6611C12.1182 25.3401 11.0173 25.3401 10.3383 24.6611L1.13557 15.4583"
+											stroke-width="2" stroke-linecap="round" />
+									</svg></p>
+								<a href="#" class="item-saving-zone__link">SHOP NOW</a>
+							</div>
+							<div class="item-saving-zone__image">
+								<img src="./img/saving-zone/01.jpg" alt="image">
+							</div>
+						</div>
+						<div class="saving-zone__item item-saving-zone">
+							<div class="item-saving-zone__content">
+								<a class="item-saving-zone__limited">Limited Stock</a>
+								<h3 class="item-saving-zone__name">Hawaiian Shirts</h3>
+								<div class="item-saving-zone__text">Dress up in summer vibe </div>
+								<p class="item-saving-zone__discount discount">UPTO 50% OFF</p>
+								<p class="item-saving-zone__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="23"
+										height="27" viewBox="0 0 23 27" fill="none">
+										<path
+											d="M11.5678 1.54871L11.5678 24.1518M22 15.4583L12.7972 24.6611C12.1182 25.3401 11.0173 25.3401 10.3383 24.6611L1.13557 15.4583"
+											stroke-width="2" stroke-linecap="round" />
+									</svg></p>
+								<a href="#" class="item-saving-zone__link">SHOP NOW</a>
+							</div>
+							<div class="item-saving-zone__image">
+								<img src="./img/saving-zone/02.jpg" alt="image">
+							</div>
+						</div>
+						<div class="saving-zone__item item-saving-zone item-saving-zone--color">
+							<div class="item-saving-zone__content">
+								<h3 class="item-saving-zone__name">Hawaiian Shirts</h3>
+								<div class="item-saving-zone__text">Dress up in summer vibe</div>
+								<p class="item-saving-zone__discount discount">UPTO 50% OFF</p>
+								<p class="item-saving-zone__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="23"
+										height="27" viewBox="0 0 23 27" fill="none">
+										<path
+											d="M11.5678 1.54871L11.5678 24.1518M22 15.4583L12.7972 24.6611C12.1182 25.3401 11.0173 25.3401 10.3383 24.6611L1.13557 15.4583"
+											stroke-width="2" stroke-linecap="round" />
+									</svg></p>
+								<a href="#" class="item-saving-zone__link">SHOP NOW</a>
+							</div>
+							<div class="item-saving-zone__image">
+								<img src="./img/saving-zone/03.jpg" alt="image">
+							</div>
+						</div>
+						<div class="saving-zone__item item-saving-zone item-saving-zone--big item-saving-zone--color">
+							<div class="item-saving-zone__content">
+								<h3 class="item-saving-zone__name">Hawaiian Shirts</h3>
+								<div class="item-saving-zone__text">Dress up in summer vibe</div>
+								<p class="item-saving-zone__discount discount">UPTO 50% OFF</p>
+								<p class="item-saving-zone__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="23"
+										height="27" viewBox="0 0 23 27" fill="none">
+										<path
+											d="M11.5678 1.54871L11.5678 24.1518M22 15.4583L12.7972 24.6611C12.1182 25.3401 11.0173 25.3401 10.3383 24.6611L1.13557 15.4583"
+											stroke-width="2" stroke-linecap="round" />
+									</svg></p>
+								<a href="#" class="item-saving-zone__link">SHOP NOW</a>
+							</div>
+							<div class="item-saving-zone__image">
+								<img src="./img/saving-zone/04.jpg" alt="image">
+							</div>
+						</div>
+						<div class="saving-zone__item item-saving-zone item-saving-zone--big item-saving-zone--color">
+							<div class="item-saving-zone__content">
+								<h3 class="item-saving-zone__name">Hawaiian Shirts</h3>
+								<div class="item-saving-zone__text">Dress up in summer vibe</div>
+								<p class="item-saving-zone__discount discount">UPTO 50% OFF</p>
+								<p class="item-saving-zone__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="23"
+										height="27" viewBox="0 0 23 27" fill="none">
+										<path
+											d="M11.5678 1.54871L11.5678 24.1518M22 15.4583L12.7972 24.6611C12.1182 25.3401 11.0173 25.3401 10.3383 24.6611L1.13557 15.4583"
+											stroke-width="2" stroke-linecap="round" />
+									</svg></p>
+								<a href="#" class="item-saving-zone__link">SHOP NOW</a>
+							</div>
+							<div class="item-saving-zone__image">
+								<img src="./img/saving-zone/05.jpg" alt="image">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section class="page__fashion fashion">
+				<div class="fashion__container">
+					<div class="fashion__body">
+						<div class="fashion__content">
+							<h2 class="fashion__title">WE MADE YOUR EVERYDAY FASHION BETTER!</h2>
+							<p class="fashion__text">In our journey to improve everyday fashion, euphoria presents
+								EVERYDAY wear range - Comfortable & Affordable fashion 24/7</p>
+							<button class="fashion__button">Shop Now</button>
+						</div>
+						<div class="fashion__images">
+							<img src="./img/fashion/02.jpg" alt="images">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__categories categories">
+				<div class="categories__container">
+					<h2 class="categories__title title">Categories For Men</h2>
+					<ul class="categories__items">
+						<li class="categories__item">
+							<a href="#" class="categories__link-card">
+								<img src="./img/categories-men/01.jpg" class="categories__images" alt="Men">
+
+								<div class="categories__content">
+									<h3 class="categories__card-title">Shirts</h3>
+									<p class="categories__card-text">Explore Now!</p>
+									<span class="categories__card-arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14"
+											viewBox="0 0 20 14" fill="none">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z"
+												fill="#797979" />
+										</svg>
+									</span>
+								</div>
+							</a>
+						</li>
+						<li class="categories__item">
+							<a href="#" class="categories__link-card">
+								<img src="./img/categories-men/01.jpg" class="categories__images" alt="Men">
+
+								<div class="categories__content">
+									<h3 class="categories__card-title">Shirts</h3>
+									<p class="categories__card-text">Explore Now!</p>
+									<span class="categories__card-arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14"
+											viewBox="0 0 20 14" fill="none">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z"
+												fill="#797979" />
+										</svg>
+									</span>
+								</div>
+							</a>
+						</li>
+						<li class="categories__item">
+							<a href="#" class="categories__link-card">
+								<img src="./img/categories-men/01.jpg" class="categories__images" alt="Men">
+
+								<div class="categories__content">
+									<h3 class="categories__card-title">Shirts</h3>
+									<p class="categories__card-text">Explore Now!</p>
+									<span class="categories__card-arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14"
+											viewBox="0 0 20 14" fill="none">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z"
+												fill="#797979" />
+										</svg>
+									</span>
+								</div>
+							</a>
+						</li>
+						<li class="categories__item">
+							<a href="#" class="categories__link-card">
+								<img src="./img/categories-men/01.jpg" class="categories__images" alt="Men">
+
+								<div class="categories__content">
+									<h3 class="categories__card-title">Shirts</h3>
+									<p class="categories__card-text">Explore Now!</p>
+									<span class="categories__card-arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14"
+											viewBox="0 0 20 14" fill="none">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z"
+												fill="#797979" />
+										</svg>
+									</span>
+								</div>
+							</a>
+						</li>
+						<li class="categories__item">
+							<a href="#" class="categories__link-card">
+								<img src="./img/categories-men/01.jpg" class="categories__images" alt="Men">
+
+								<div class="categories__content">
+									<h3 class="categories__card-title">Shirts</h3>
+									<p class="categories__card-text">Explore Now!</p>
+									<span class="categories__card-arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14"
+											viewBox="0 0 20 14" fill="none">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z"
+												fill="#797979" />
+										</svg>
+									</span>
+								</div>
+							</a>
+						</li>
+						<li class="categories__item">
+							<a href="#" class="categories__link-card">
+								<img src="./img/categories-men/01.jpg" class="categories__images" alt="Men">
+
+								<div class="categories__content">
+									<h3 class="categories__card-title">Shirts</h3>
+									<p class="categories__card-text">Explore Now!</p>
+									<span class="categories__card-arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14"
+											viewBox="0 0 20 14" fill="none">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z"
+												fill="#797979" />
+										</svg>
+									</span>
+								</div>
+							</a>
+						</li>
+						<li class="categories__item">
+							<a href="#" class="categories__link-card">
+								<img src="./img/categories-men/01.jpg" class="categories__images" alt="Men">
+
+								<div class="categories__content">
+									<h3 class="categories__card-title">Shirts</h3>
+									<p class="categories__card-text">Explore Now!</p>
+									<span class="categories__card-arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14"
+											viewBox="0 0 20 14" fill="none">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z"
+												fill="#797979" />
+										</svg>
+									</span>
+								</div>
+							</a>
+						</li>
+						<li class="categories__item">
+							<a href="#" class="categories__link-card">
+								<img src="./img/categories-men/01.jpg" class="categories__images" alt="Men">
+
+								<div class="categories__content">
+									<h3 class="categories__card-title">Shirts</h3>
+									<p class="categories__card-text">Explore Now!</p>
+									<span class="categories__card-arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14"
+											viewBox="0 0 20 14" fill="none">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z"
+												fill="#797979" />
+										</svg>
+									</span>
+								</div>
+							</a>
+						</li>
+
+					</ul>
+
+				</div>
+			</section>
+			<section class="page__categories categories">
+				<div class="categories__container">
+					<h2 class="categories__title title">Categories For Women</h2>
+					<ul class="categories__items">
+						<li class="categories__item">
+							<a href="#" class="categories__link-card">
+								<img src="./img/categories-women/01.jpg" class="categories__images" alt="Men">
+
+								<div class="categories__content">
+									<h3 class="categories__card-title">Shirts</h3>
+									<p class="categories__card-text">Explore Now!</p>
+									<span class="categories__card-arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14"
+											viewBox="0 0 20 14" fill="none">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z"
+												fill="#797979" />
+										</svg>
+									</span>
+								</div>
+							</a>
+						</li>
+						<li class="categories__item">
+							<a href="#" class="categories__link-card">
+								<img src="./img/categories-women/01.jpg" class="categories__images" alt="Men">
+
+								<div class="categories__content">
+									<h3 class="categories__card-title">Shirts</h3>
+									<p class="categories__card-text">Explore Now!</p>
+									<span class="categories__card-arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14"
+											viewBox="0 0 20 14" fill="none">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z"
+												fill="#797979" />
+										</svg>
+									</span>
+								</div>
+							</a>
+						</li>
+						<li class="categories__item">
+							<a href="#" class="categories__link-card">
+								<img src="./img/categories-women/01.jpg" class="categories__images" alt="Men">
+
+								<div class="categories__content">
+									<h3 class="categories__card-title">Shirts</h3>
+									<p class="categories__card-text">Explore Now!</p>
+									<span class="categories__card-arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14"
+											viewBox="0 0 20 14" fill="none">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z"
+												fill="#797979" />
+										</svg>
+									</span>
+								</div>
+							</a>
+						</li>
+						<li class="categories__item">
+							<a href="#" class="categories__link-card">
+								<img src="./img/categories-women/01.jpg" class="categories__images" alt="Men">
+
+								<div class="categories__content">
+									<h3 class="categories__card-title">Shirts</h3>
+									<p class="categories__card-text">Explore Now!</p>
+									<span class="categories__card-arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14"
+											viewBox="0 0 20 14" fill="none">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z"
+												fill="#797979" />
+										</svg>
+									</span>
+								</div>
+							</a>
+						</li>
+
+					</ul>
+
+				</div>
+			</section>
+			<section class="page__top-brands top-brands">
+				<div class="top-brands__container">
+					<div class="top-brands__body">
+
+						<h2 class="top-brands__title">Top Brands Deal</h2>
+						<p class="top-brands__text">Up To <span>60% </span>off on brands</p>
+						<ul class="top-brands__items">
+							<li class="top-brands__item">
+								<a href="#">
+									<img src="./img/top-brands/01.png" alt="Brand">
+								</a>
+							</li>
+							<li class="top-brands__item">
+								<a href="#">
+									<img src="./img/top-brands/02.png" alt="Brand">
+								</a>
+							</li>
+							<li class="top-brands__item">
+								<a href="#">
+									<img src="./img/top-brands/03.png" alt="Brand">
+								</a>
+							</li>
+							<li class="top-brands__item">
+								<a href="#">
+									<img src="./img/top-brands/04.png" alt="Brand">
+								</a>
+							</li>
+							<li class="top-brands__item">
+								<a href="#">
+									<img src="./img/top-brands/01.png" alt="Brand">
+								</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="page__limelight limelight">
+				<div class="limelight__container">
+					<h2 class="limelight__title title">In The Limelight</h2>
+					<ul class="limelight__items">
+						<li class="limelight__item">
+							<a href="#" class="limelight__like">
+								<img src="./img/limelight/like.svg" alt="Like">
+							</a>
+							<div class="limelight__image">
+								<img src="./img/limelight/01.jpg" alt="Image">
+							</div>
+							<div class="limelight__content">
+								<h3 class="limelight__name">Black Sweatshirt with ....</h3>
+								<p class="limelight__text">Jhanvi’s Brand</p>
+								<a href="#" class="limelight__price">$123.00</a>
+							</div>
+
+						</li>
+						<li class="limelight__item">
+							<a href="#" class="limelight__like">
+								<img src="./img/limelight/like.svg" alt="Like">
+							</a>
+							<div class="limelight__image">
+								<img src="./img/limelight/01.jpg" alt="Image">
+							</div>
+							<div class="limelight__content">
+								<h3 class="limelight__name">Black Sweatshirt with ....</h3>
+								<p class="limelight__text">Jhanvi’s Brand</p>
+								<a href="#" class="limelight__price">$123.00</a>
+							</div>
+
+						</li>
+						<li class="limelight__item">
+							<a href="#" class="limelight__like">
+								<img src="./img/limelight/like.svg" alt="Like">
+							</a>
+							<div class="limelight__image">
+								<img src="./img/limelight/01.jpg" alt="Image">
+							</div>
+							<div class="limelight__content">
+								<h3 class="limelight__name">Black Sweatshirt with ....</h3>
+								<p class="limelight__text">Jhanvi’s Brand</p>
+								<a href="#" class="limelight__price">$123.00</a>
+							</div>
+
+						</li>
+
+					</ul>
+				</div>
+			</section>
+			<section class="page__feedback feedback">
+				<div class="feedback__container">
+					<h2 class="feedback__title title">Feedback</h2>
+					<ul class="feedback__items">
+						<li class="feedback__item">
+							<div class="feedback__avatar">
+								<img src="./img/feedback/01.jpg" alt="avatar">
+							</div>
+							<fieldset class="feedback__rating rating">
+								<legend class="rating__caption"></legend>
+								<div class="rating__group">
+									<input class="rating__star" type="radio" name="health" value="1" aria-label="Ужасно"
+										checked>
+									<input class="rating__star" type="radio" name="health" value="2"
+										aria-label="Сносно">
+									<input class="rating__star" type="radio" name="health" value="3"
+										aria-label="Нормально">
+									<input class="rating__star" type="radio" name="health" value="4"
+										aria-label="Хорошо">
+									<input class="rating__star" type="radio" name="health" value="5"
+										aria-label="Отлично">
+								</div>
+							</fieldset>
+							<a href="#" class="feedback__name">
+								<h4>Floyd Miles</h4>
+							</a>
+							<div class="feedback__text">
+								<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+									officia consequat duis enim velit mollit.
+									Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+									ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+									mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+							</div>
+						</li>
+						<li class="feedback__item">
+							<div class="feedback__avatar">
+								<img src="./img/feedback/01.jpg" alt="avatar">
+							</div>
+							<fieldset class="feedback__rating rating">
+								<legend class="rating__caption"></legend>
+								<div class="rating__group">
+									<input class="rating__star" type="radio" name="health" value="1" aria-label="Ужасно"
+										checked>
+									<input class="rating__star" type="radio" name="health" value="2"
+										aria-label="Сносно">
+									<input class="rating__star" type="radio" name="health" value="3"
+										aria-label="Нормально">
+									<input class="rating__star" type="radio" name="health" value="4"
+										aria-label="Хорошо">
+									<input class="rating__star" type="radio" name="health" value="5"
+										aria-label="Отлично">
+								</div>
+							</fieldset>
+							<a href="#" class="feedback__name">
+								<h4>Floyd Miles</h4>
+							</a>
+							<div class="feedback__text">
+								<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+									officia consequat duis enim velit mollit.
+									Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+									ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+									mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+							</div>
+						</li>
+						<li class="feedback__item">
+							<div class="feedback__avatar">
+								<img src="./img/feedback/01.jpg" alt="avatar">
+							</div>
+							<fieldset class="feedback__rating rating">
+								<legend class="rating__caption"></legend>
+								<div class="rating__group">
+									<input class="rating__star" type="radio" name="health" value="1" aria-label="Ужасно"
+										checked>
+									<input class="rating__star" type="radio" name="health" value="2"
+										aria-label="Сносно">
+									<input class="rating__star" type="radio" name="health" value="3"
+										aria-label="Нормально">
+									<input class="rating__star" type="radio" name="health" value="4"
+										aria-label="Хорошо">
+									<input class="rating__star" type="radio" name="health" value="5"
+										aria-label="Отлично">
+								</div>
+							</fieldset>
+							<a href="#" class="feedback__name">
+								<h4>Floyd Miles</h4>
+							</a>
+							<div class="feedback__text">
+								<p>ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+									mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+							</div>
+						</li>
+
+					</ul>
+					<div class="feedback__scrollbar">
+						<span class="feedback-active"></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__column">
+					<ul class="footer__nav nav-footer">
+						<li class="nav-footer__list-title">Need Help</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">Contact Us</a>
+						</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">Track Order</a>
+						</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">Returns & Refunds</a>
+						</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">FAQ's</a>
+						</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">Career</a>
+						</li>
+					</ul>
+					<ul class="footer__nav nav-footer">
+						<li class="nav-footer__list-title">Company</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">About Us</a>
+						</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">euphoria Blog</a>
+						</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">euphoriastan</a>
+						</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">Collaboration</a>
+						</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">Media</a>
+						</li>
+					</ul>
+					<ul class="footer__nav nav-footer">
+						<li class="nav-footer__list-title">More Info</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">Term and Conditions</a>
+						</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">Privacy Policy</a>
+						</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">Returns & Refunds</a>
+						</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">Sitemap</a>
+						</li>
+					</ul>
+					<ul class="footer__nav nav-footer">
+						<li class="nav-footer__list-title">Location</li>
+						<li class="nav-footer__list">
+							<a href="mailto:support@euphoria.in" class="nav-footer__link">support@euphoria.in</a>
+						</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">Eklingpura Chouraha, Ahmedabad Main Road</a>
+						</li>
+						<li class="nav-footer__list">
+							<a href="#" class="nav-footer__link">(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</a>
+						</li>
+
+					</ul>
+
+
+
+
+
+
+
+
+				</div>
+				<div class="footer__social social">
+					<div class="social__body">
+						<a class="social__link" href="#">
+							<img src="./img/footer/fb.svg" alt="Fb">
+						</a>
+						<a class="social__link" href="#">
+							<img src="./img/footer/in.svg" alt="Fb">
+						</a>
+						<a class="social__link" href="#">
+							<img src="./img/footer/tw.svg" alt="Fb">
+						</a>
+						<a class="social__link" href="#">
+							<img src="./img/footer/ld.svg" alt="Fb">
+						</a>
+
+					</div>
+					<div class="footer__download download">
+						<h3 class="download__title">Download The App </h3>
+						<a href="#" class="download__link">
+							<img src="./img/footer/goggle.svg" alt="Google">
+						</a>
+						<a href="#" class="download__link">
+							<img src="./img/footer/apple.svg" alt="Google">
+						</a>
+					</div>
+
+				</div>
+				<div class="footer__popular-categories popular-categories">
+					<h4 class="popular-categories__title">Popular Categories</h4>
+					<span class="popular-categories__icon">
+						<img src="./img/footer/icon.svg" alt="">
+					</span>
+				</div>
+				<div class="footer__copy copy">
+					<h5 class="copy__text">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</h5>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script>
+		"use strict"
+		window.onload = () => {
+			const icon = document.querySelectorAll('.icon-menu');
+			icon.forEach(elem => {
+				elem.addEventListener('click', function () {
+					document.documentElement.classList.toggle('menu-open');
+				});
+			});
+
+
+
+
+
+
+			const search = document.querySelector('.header__search > label');
+			search.addEventListener('click', () => {
+				const searchBox = document.querySelector('.header__search');
+				searchBox.classList.toggle('search-open');
+			})
+			console.log('');
+		}
+	</script>
+</body>
+<!--<fieldset>
+	<legend></legend>
+</fieldset> 
+-->
+
+</html>

@@ -1,0 +1,351 @@
+
+
+
+.header {
+    position: relative;
+    color: #000;
+    font-family: 'Causten';
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #ffffff;
+
+
+    &__container {
+        display: flex;
+        gap: 70px;
+        align-items: center;
+        min-height: 100px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        @media (max-width:$pc){
+            gap: 15px; 
+       }
+
+        @media (max-width:$tablet) {
+            min-height: 70px;
+        }
+
+        @media (max-width:$mobile) {
+            gap: 10px;
+        }
+    }
+
+
+    &__logo {
+        
+        min-width: 60px;
+        z-index: 51;
+
+        @media (max-width:$tablet) {
+            
+            z-index: 105;
+        }
+
+
+        & img {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 91/45;
+        }
+    }
+    &__search {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 12px;
+        text-align: center;
+        font-family: "Causten";
+       
+        border-radius: 8px;
+        background-color: #F6F6F6;
+        position: relative;
+        @media (max-width:$tablet){
+            padding: 12px;
+        }
+        @media (max-width:$mobile){
+            padding: 5px;
+        }
+
+        & input {
+            color: #807D7E;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #F6F6F6;
+            @media (max-width:$tablet){
+                // opacity: 0;
+                // visibility: hidden;
+                width: 0;
+                padding: 0;
+               
+            }
+        }
+        & label {
+            display: block;
+            align-self: center;
+            margin-left: 12px;
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            background: url('../img/header/search.svg') center/contain no-repeat;
+            @media (max-width:$tablet){
+                margin-left: 0;
+               
+            }
+           
+        }
+        @media (max-width:$tablet) {
+            gap: 0;
+            z-index: 105;
+
+            &.search-open {
+            gap: 20px;
+            position: absolute;
+            width: 280px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 200;
+            padding: 10px;
+            padding: 5px; 
+            & input {
+                width: 100%;
+                padding: 12px;
+            }
+        }
+        }
+        @media (max-width:$mobile){
+           
+        }
+        
+    }
+    
+
+    &__menu {
+        flex: 1 1 auto;
+    }
+
+    
+}
+
+.menu {
+
+    &__body {
+        @media (max-width:$tablet) {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -100%;
+            z-index: 100;
+            overflow: auto;
+            padding: 80px 15px 15px 30px;
+            background-color: #e2e2e2;
+
+            transition: left 0.3s ease 0s;
+
+
+            &::before {
+                content: "";
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                z-index: 2;
+                height: 70px;
+
+                background-color: #e9dfd9;
+                transition: left 0.3s ease 0s;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        column-gap: 40px;
+        row-gap: 8px;
+        flex-wrap: wrap;
+       
+        @media (max-width:$pc){
+            column-gap: 10px;
+       }
+        @media (max-width:$tablet) {
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 30px;
+        }
+    }
+
+    // &__item {}
+
+    &__link {
+        font-size: 20px;
+        padding: 5px; // Для покращення юзабіліті ( збільшив прощу натискання )
+        transition: all 0.3s ease 0s;
+        
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: #D58417;
+                text-shadow: 1px 0px 0px;
+            }
+        }
+
+        @media (max-width:$tablet) {
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+
+    &__item--parent {
+        display: flex;
+        position: relative;
+        align-items: center;
+        gap: 4px;
+    }
+}
+
+.menu-open body {overflow: hidden;} //прибирає скрол на сайті при відкритому бургер меню 
+.menu-open .menu__body,
+.menu-open .menu__body::before {
+    left: 0;
+}
+
+
+.actions-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+
+    &__item {
+        padding: 12px;
+        border-radius: 8px;
+        background-color: #F6F6F6;
+        flex-shrink: 0;
+        position: relative;
+        transition: transform 0.3s ease 0s;
+
+        & span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 12px;
+            height: 12px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background-color: #FF3333;
+            color: #FFF;
+            font-size: 10px;
+            text-align: center;
+            padding-top: 1px;
+
+
+        }
+
+
+        @media (max-width:$tablet) {
+            z-index: 105;
+          
+        }
+        @media (max-width:$mobile){
+            padding: 5px; 
+        }
+    }
+    @media (max-width:$tablet){
+        gap: 15px;
+    }
+    @media (max-width:$mobile) {
+        gap: 10px;
+       
+        
+    }
+    
+    @media (any-hover: hover) {
+        &:hover {
+            transform: scale(1.1);
+
+        }
+
+    }
+}
+
+.icon-menu {
+    display: none;
+    // display: block;
+    width: 30px;
+    background-color: transparent;
+    flex: 0 0 30px;
+    height: 18px;
+    position: relative;
+    z-index: 105;
+
+    &::before,
+    &::after,
+    & span {
+        content: "";
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        transition: all 0.3s;
+        background-color: #000;
+    }
+
+    & span {
+        margin-top: -1px;
+    }
+
+    &::after {
+        top: 0;
+    }
+
+    &::before {
+        bottom: 0;
+    }
+
+    @media (max-width:$tablet) {
+        display: block;
+
+        .menu-open &::before {
+            transform: rotate(-45deg);
+            top: 50%;
+            margin-top: -1px;
+        }
+
+        .menu-open &::after {
+            transform: rotate(45deg);
+            top: 50%;
+            margin-top: -1px;
+        }
+
+        .menu-open & span {
+            transform: scale(0);
+
+        }
+    }
+
+}
+
+// .button {
+//     padding: 13px 28px;
+//     color: #FFF;
+//     font-size: 20px;
+//     font-style: normal;
+//     font-weight: 700;
+//     line-height: 100%;
+//     border-radius: 5px;
+//     background-color: #0E333D;
+//     transition: background-color 0.3s ease 0s;
+
+//     @media (any-hover: hover) {
+//         &:hover {
+//             background-color: #061a1f;
+//         }
+//     }
+
+// }
